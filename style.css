@@ -14,3 +14,134 @@ body {
 }
 
 /* add styles here */
+header {
+   background-image: url(images/card1.jpg);
+   background-size: cover;
+   width: 100%;
+   min-height: 500px;
+ }
+ nav {
+   background-image: url(images/logo.png);
+   background-size: 60px;
+   background-repeat: no-repeat;
+   background-position: 10px 5px;
+   padding: 20px;
+   height: 100px;
+ }
+ nav li {
+   display: inline-block;
+   list-style-type: none; /* Removes list bullets */
+ }
+ nav ul {
+   margin-left: 80px; /* Adjusts the left margin to move the list left of the logo */
+ }
+ nav a {
+   color: #51279b;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+ }
+ 
+ nav a:visited {
+   color: #8662c7;
+ }
+ 
+ nav a:hover {
+   color: #8662c7;
+   text-decoration: underline;
+ }
+ header div {
+   margin: 100px 0 0 80px; /* Top margin for vertical positioning, left margin for alignment with navigation */
+ }
+ header div {
+   margin: 100px 0 0 80px;
+   color: white; /* Sets the text color for all elements within the div */
+}
+
+header h2 {
+   font-size: 48px; /* Sets font size for the h2 element */
+   margin-bottom: 0.5rem; /* Space below the h2 element */
+}
+
+header p {
+   font-size: 24px; /* Sets font size for the p element */
+   margin-bottom: 1.5rem; /* Space below the p element */
+}
+/* Targeting the anchor tag within the header's div to style the button */
+header div a {
+   background-color: #51279b; /* Background color of the button */
+   color: white; /* Text color */
+   padding: 10px 20px; /* Padding around the text */
+   text-decoration: none; /* Remove underline */
+   border-radius: 5px; /* Rounded corners */
+}
+
+header div a:hover {
+   background-color: #8662c7; /* Background color on hover */
+}
+/* Styling the card class to display cards in a single line */
+.card {
+   float: left; /* Floats the card to the left */
+   display: inline-block; /* Allows for inline-block behavior */
+   width: calc(33% - 10px); /* Width of each card, accounting for margin */
+   margin: 10px 5px; /* Margin around each card */
+   background-color: white; /* Background color for the card */
+   padding: 20px; /* Add padding inside the card */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+}
+/* Adding padding around the card content */
+.card div {
+   padding: 20px 5px; /* Padding inside the card content */
+}
+
+/* Ensuring the card images are full width */
+.card img {
+   width: 100%; /* Image will expand to the full width of the card */
+}
+
+/* Setting font size for the description */
+.card div.description {
+   font-size: 12px; /* Font size for description */
+}
+
+/* Setting font size for the card titles */
+.card h3 {
+   font-size: 14px; /* Font size for h3 elements in cards */
+}
+/* Styles for the social section containing comment and favorite icons */
+.social {
+   margin-top: 1rem; /* Margin above the social section */
+   font-size: 12px; /* Font size for the social text */
+ }
+ 
+ /* Styles for the span elements inside .social */
+ .social span {
+   background-size: contain; /* Ensure the background image fits within the span */
+   background-repeat: no-repeat; /* Prevent the background image from repeating */
+   padding-left: 25px; /* Padding to the left of the icons */
+   margin-right: 10px; /* Margin to the right of the icons */
+ }
+ 
+ /* Specific styles for the heart icon */
+ .social .heart {
+   background-image: url(./images/heart.png); /* Path to the heart icon image */
+ }
+ 
+ /* Specific styles for the comment icon */
+ .social .comment {
+   background-image: url(./images/comment.png); /* Path to the comment icon image */
+ }
+/* Styles for the parent main element */
+main {
+   display: flex;              /* Enable Flexbox */
+   flex-wrap: wrap;           /* Allow cards to wrap to the next line if needed */
+   justify-content: space-between; /* Add space between cards */
+ }
+ 
+ /* Styles for the cards */
+ .card {
+   width: calc(33.33% - 20px); /* Adjust width to fit three cards in a row, minus margins */
+   margin: 10px;               /* Margin around cards */
+   box-sizing: border-box;      /* Include padding and border in the element's total width and height */
+ }
+   
